@@ -1,0 +1,48 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Crear Cuenta</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-item>
+    <ion-label position="floating">Nombre Completo</ion-label>
+    <ion-input type="text" [(ngModel)]="fullName"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">RUT</ion-label>
+    <ion-input type="text" [(ngModel)]="rut"></ion-input>
+  </ion-item>
+  <ion-text color="medium" class="ion-margin-start ion-margin-bottom">
+    Ingresa tu RUT con digito verificador sin puntos.
+  </ion-text>
+  
+
+  <ion-item>
+    <ion-label position="floating">Correo electrónico</ion-label>
+    <ion-input type="email" [(ngModel)]="email"></ion-input>
+  </ion-item>
+  <ion-text color="medium" class="ion-margin-start ion-margin-bottom">
+    Si eres alumno, usa un correo &#64;duoc.cl. Si eres profesor, usa un correo &#64;profesor.duoc.cl.
+  </ion-text>
+
+  <ion-item>
+    <ion-label position="floating">Contraseña</ion-label>
+    <ion-input type="password" [(ngModel)]="password"></ion-input>
+  </ion-item>
+  <ion-text color="medium" class="ion-margin-start ion-margin-bottom">
+    La contraseña debe tener un máximo de 6 caracteres.
+  </ion-text>
+
+  <ion-item>
+    <ion-label position="floating">Repetir Contraseña</ion-label>
+    <ion-input type="password" [(ngModel)]="confirmPassword"></ion-input>
+  </ion-item>
+
+  <ion-button expand="full" color="primary" (click)="registerUser()">
+    Registrar
+  </ion-button>
+
+  <ion-text color="danger" *ngIf="errorMessage">{{ errorMessage }}</ion-text>
+</ion-content>

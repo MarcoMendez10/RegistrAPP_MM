@@ -1,0 +1,37 @@
+.background-image {
+  
+  /* Ruta de la imagen */
+  background-size: cover; /* Asegura que la imagen cubra todo el fondo */
+  background-position: center; /* Centra la imagen */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  height: 100%; /* Asegura que cubra toda la altura del contenido */
+}
+
+.welcome-card {
+  margin: 6px 6px;
+  padding: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+ion-item {
+  margin-top: 15px;
+  --highlight-height: 2px;
+  --highlight-color-focused: #3880ff;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+}
+
+ion-button {
+  margin-top: 15px;
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+.ion-text-center {
+  text-align: center;
+}
+
+.ion-margin-top {
+  margin-top: 20px;
+}

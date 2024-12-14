@@ -1,0 +1,15 @@
+.ion-margin-start {
+    margin-left: 16px; /* Ajusta este valor según tus necesidades */
+  }
+  
+  .ion-margin-bottom {
+    margin-bottom: 16px; /* Ajusta este valor según tus necesidades */
+  }
+  
+  ion-text {
+    font-size: 14px; /* Tamaño de fuente */
+    line-height: 1.5; /* Altura de línea para mejor legibilidad */
+    color: var(--ion-color-medium); /* Usando color predeterminado de Ionic */
+    display: block; /* Asegura que ocupe toda la línea */
+  }
+  
